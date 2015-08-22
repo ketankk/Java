@@ -1,0 +1,10 @@
+package kk.java.calci;
+
+public interface Calci {
+
+
+	void Add();
+	void Multiply();
+	void Sub();
+	void Div();
+}

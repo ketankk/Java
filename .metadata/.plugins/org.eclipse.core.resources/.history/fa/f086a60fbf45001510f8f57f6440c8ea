@@ -1,0 +1,30 @@
+package kk.java.calc;
+
+import java.util.Scanner;
+
+public class Calculator implements calci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.print("Enter Two no.");
+		Scanner sc=new Scanner(System.in);
+		int a= sc.nextInt();
+		int b= sc.nextInt();
+		char ch =sc.next().charAt(0);
+		
+		switch(ch){
+		case '+' : Add();
+			break;
+		case '-':
+			break;
+			case '*':
+				break;
+			case '/':
+				break;
+				default:
+		
+		}
+	}
+
+}

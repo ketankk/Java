@@ -1,0 +1,8 @@
+
+public interface Interface {
+
+	void Add();
+	void Multiply();
+	void Sub();
+	void Div();
+}

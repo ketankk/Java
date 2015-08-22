@@ -1,0 +1,8 @@
+package kk.java.add;
+
+public class Add {
+
+	int Add(int a,int b){
+		return a+b;
+	}
+}

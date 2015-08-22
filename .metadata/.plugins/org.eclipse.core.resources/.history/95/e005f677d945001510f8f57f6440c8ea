@@ -1,0 +1,12 @@
+package kk.java.subdiv;
+
+import kk.java.calci.Calci;
+
+public abstract class SubDiv implements Calci{
+public int sub(int a,int b){
+	return a-b;
+}
+public int div(int a,int b){
+	return a/b;
+}
+}

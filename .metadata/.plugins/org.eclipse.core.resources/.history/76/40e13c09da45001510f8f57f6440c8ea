@@ -1,0 +1,11 @@
+package kk.java.multi;
+
+import kk.java.add.Add;
+import kk.java.calci.Calci;
+
+public abstract class Multi extends Add{
+	public int multi(int a,int b){
+		return a*b;
+	}
+
+}

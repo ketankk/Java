@@ -1,24 +1,47 @@
 package kk.play.wish;
 
 
-import android.support.v7.app.ActionBarActivity;
-import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.Button;
-import android.widget.EditText;
-import android.widget.TextView;
 
-public class MainActivity extends ActionBarActivity {
+
+public class MainActivity {
+	Button submit;
+	EditText username;
+	EditText password;
+	TextView name1,pass1;
+	String name;
+	String pass;
+	
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		username=(EditText)findViewById(R.id.user_name);
+		password=(EditText)findViewById(R.id.password);
+		submit=(Button)findViewById(R.id.button12);
 		
-		//EditText text=(EditText)findViewById(R.id.editText1);
- 		//String name=text.getText().toString();
-		//Button b1= (Button)findViewById(R);
+		name1=(TextView)findViewById(R.id.name);
+		pass1=(TextView)findViewById(R.id.pass);
+		
+		
+		
+		final String text="kk";
+		//text=password.getText().toString()+username.getText().toString();
+		
+		submit.setOnClickListener(new View.OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				// TODO Auto-generated method stub
+				Toast.makeText(MainActivity.this,text, Toast.LENGTH_LONG).show();
+				name1.setText(username.getText());
+				pass1.setText(password.getText());
+				
+			}
+		});
+		
+		
+		
 	}
 
 	@Override

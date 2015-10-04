@@ -1,4 +1,4 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,36 +7,66 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="kk.play.wish.MainActivity" >
-
+<TableRow>
     <TextView
-        android:id="@+id/textView1"
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="110dp"
-        android:text="Hello Ujjawal" />
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="20dp"
+        android:text="Enter Username" />
+    
+     <EditText
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/username"
+        android:ems="10"
+        android:inputType="textPersonName" />
+    </TableRow>
+<TableRow>
+    <TextView
+        android:id="@+id/pss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:text="Password" />
 
     <EditText
-        android:id="@+id/editText1"
+        android:id="@+id/password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/textView1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="41dp"
-        android:ems="10" >
-
-        <requestFocus />
-    </EditText>
-
+        android:layout_below="@+id/username"
+        android:layout_toRightOf="@+id/pss"
+        android:ems="10"
+        android:inputType="textPassword" />
+    </TableRow>
+<TableRow>
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/editText1"
-        android:layout_below="@+id/textView1"
-        android:layout_marginTop="35dp"
+        android:layout_below="@+id/password"
+        android:layout_toRightOf="@+id/username"
         android:text="Press This" />
 
-</RelativeLayout>
+   </TableRow>
+<TableRow >
+    <TextView 
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        
+        />
+    <TextView 
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Password"
+        />
+    
+    
+</TableRow>
+</TableLayout>
